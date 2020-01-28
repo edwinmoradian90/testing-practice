@@ -31,7 +31,25 @@ const functions = {
           }
         });
         return newArr.join('');
-      }
+      },
+
+    analyze: (array) => {
+        let sorted = array.sort();
+        let summed = array.reduce((acc, currentVal) => acc + currentVal);
+        let average = Math.floor(summed/array.length);
+        let min = sorted[0];
+        let max = sorted[array.length - 1];
+        let length = array.length;
+
+        const object = {
+            average,
+            min,
+            max,
+            length
+        };
+
+        return object;
+    }
       
 }
 

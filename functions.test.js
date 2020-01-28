@@ -39,3 +39,12 @@ test('caesar shift preserves punctuation', () => {
 test('caesar shift wraps from z to a and preserves space', () => {
     expect(functions.caesar('String! Empty?', 10)).toBe('Cdbsxq! Owzdi?');
 });
+
+test('analyze takes an array, and returns an object with average, min, max, and length', () => {
+    expect(functions.analyze([2,1,3])).toMatchObject({
+        average: 2,
+        min: 1,
+        max: 3, 
+        length: 3 
+    });
+});
