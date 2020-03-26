@@ -1,7 +1,7 @@
 const functions = require('./functions');
 
-test('capitialize first letter of any string', () => {
-  expect(functions.capitialize('string')).toBe('String');
+test('capitalize first letter of any string', () => {
+  expect(functions.capitalize('string')).toBe('String');
 });
 
 test('reverses given string', () => {
