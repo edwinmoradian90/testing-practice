@@ -1,6 +1,6 @@
 const functions = {
   capitalize: (string) => string[0].toUpperCase() + string.slice(1),
-  reverseString: (string) => string.split('').reverse().join('').toString(),
+  reverseString: (string) => { string.split('').reverse().join('').toString(); },
   calculator: {
     add: (a, b) => a + b,
     subtract: (a, b) => a - b,
